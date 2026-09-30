@@ -1,0 +1,16 @@
+name = "chatze-nepaldsg"
+main = "worker.js"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+# 100% Free Cloudflare D1 Native Database
+[[d1_databases]]
+binding = "DB"
+database_name = "chatze_db"
+
+[vars]
+NODE_ENV = "production"
+
+[assets]
+directory = "public"
+binding = "ASSETS"
